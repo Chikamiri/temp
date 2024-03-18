@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="224.0" prefWidth="455.0" styleClass="main-background" stylesheets="@../Style/Login.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="LoginPanel">
+   <children>
+      <AnchorPane prefHeight="70.0" prefWidth="455.0" styleClass="top-bar">
+         <children>
+            <Button layoutX="-3.0" mnemonicParsing="false" onAction="#EasterEgg" prefHeight="72.0" prefWidth="461.0" styleClass="EasterEgg" />
+            <Label layoutX="161.0" prefHeight="70.0" prefWidth="134.0" styleClass="transparent" text="Login Panel" textAlignment="CENTER" wrapText="true">
+               <font>
+                  <Font name="Lucida Console" size="20.0" />
+               </font>
+            </Label>
+         </children>
+      </AnchorPane>
+      <Label layoutX="47.0" layoutY="141.0" prefHeight="32.0" prefWidth="87.0" styleClass="transparent" text="Password:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="109.0" prefHeight="32.0" prefWidth="87.0" styleClass="transparent" text="Username:" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Lucida Console" size="15.0" />
+         </font>
+      </Label>
+      <Label layoutX="47.0" layoutY="70.0" prefHeight="32.0" prefWidth="246.0" styleClass="transparent" text="Please login to continue" textAlignment="CENTER" wrapText="true">
+         <font>
+            <Font name="Consolas Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField fx:id="username" layoutX="134.0" layoutY="112.0" prefHeight="26.0" prefWidth="276.0" />
+      <TextField fx:id="password" layoutX="134.0" layoutY="144.0" prefHeight="26.0" prefWidth="276.0" />
+      <Button layoutX="234.0" layoutY="182.0" mnemonicParsing="false" onAction="#loginBtn" prefHeight="30.0" prefWidth="76.0" styleClass="login-btn" text="Login" />
+      <Button fx:id="Btn" contentDisplay="RIGHT" layoutX="152.0" layoutY="182.0" mnemonicParsing="false" onAction="#CloseBtn" prefHeight="30.0" prefWidth="76.0" styleClass="login-btn" text="Close" />
+   </children>
+</AnchorPane>

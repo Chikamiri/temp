@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="444.0" prefWidth="756.0" styleClass="background" stylesheets="@../Style/Main.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="MainManager">
+   <children>
+      <Pane prefHeight="444.0" prefWidth="224.0" styleClass="sidebar">
+         <children>
+            <Button layoutX="36.0" layoutY="105.0" mnemonicParsing="false" onAction="#List" prefHeight="49.0" prefWidth="152.0" styleClass="mainButton" text="List" />
+            <Label layoutX="13.0" layoutY="14.0" styleClass="transparent" text="Hotel Rooms Manager">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Label>
+            <Button layoutX="36.0" layoutY="237.0" mnemonicParsing="false" onAction="#Modify" prefHeight="49.0" prefWidth="152.0" styleClass="mainButton" text="Modify" />
+            <Button layoutX="36.0" layoutY="170.0" mnemonicParsing="false" onAction="#Add" prefHeight="49.0" prefWidth="152.0" styleClass="mainButton" text="Add" />
+            <Button layoutX="36.0" layoutY="302.0" mnemonicParsing="false" onAction="#Payment" prefHeight="49.0" prefWidth="152.0" styleClass="mainButton" text="Payment" />
+            <Button layoutX="36.0" layoutY="367.0" mnemonicParsing="false" onAction="#Print" prefHeight="49.0" prefWidth="152.0" styleClass="mainButton" text="Print Receipt" />
+         </children>
+      </Pane>
+      <TableView layoutX="228.0" layoutY="8.0" prefHeight="430.0" prefWidth="523.0">
+        <columns>
+          <TableColumn prefWidth="75.0" text="C1" />
+          <TableColumn prefWidth="75.0" text="C2" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

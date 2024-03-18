@@ -1,0 +1,17 @@
+.transparent{
+    -fx-background-color: rgb(0,0,0,0);
+}
+.top-bar{
+    -fx-background-color: rgb(88, 149, 144);
+}
+.main-background{
+    -fx-background-color: rgb(106, 188, 181);
+}
+.login-btn{
+    -fx-background-color: rgb(88, 149, 144);
+    -fx-border-color: rgb(0,0,0);
+}
+.EasterEgg{
+    -fx-background-color: rgb(0,0,0,0);
+    -fx-border-color: rgb(0,0,0);
+}
