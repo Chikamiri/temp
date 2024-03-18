@@ -1,18 +1,33 @@
-## Getting Started
+# Group 20 - Final Exam
 
-Welcome to the VS Code Java world. Here is a guideline to help you get started to write Java code in Visual Studio Code.
+**Bài tập 1. Xây dựng ứng dụng quản lý khách sạn.**
 
-## Folder Structure
+> **Yêu cầu:**  
+Giao diện cửa sổ JavaFX.  
+    - Có chức năng quản lý phòng.  
+        + Thêm, sửa, xóa phòng.  
+        + Liệt kê phòng còn trống hay không còn trống.  
+    - Có chức năng đặt phòng, trả phòng.  
+        + Khi xử lý chức năng này cần có thêm thông tin khách hàng đặt phòng.  
+    - Dữ liệu được lưu trữ xuống file nhị phân.  
+        + Cần tạo các lớp liên quan đến “phòng” để đọc, ghi xuống file.  
+    - Khi làm việc với dữ liệu trong bộ nhớ, dữ liệu cần  được lưu trữ dưới dạng các Collection tùy chọn như   ArrayList, LinkedList, Map,...  
+    - Sinh viên có thể thêm các chức năng vào chương trình để ứng dụng phong phú hơn bằng cách tìm hiểu về bài toán quản lý khách sạn (tùy chọn).
 
-The workspace contains two folders by default, where:
+## Member
 
-- `src`: the folder to maintain sources
-- `lib`: the folder to maintain dependencies
+1. Pham Xuan Bach - 2301 0118
 
-Meanwhile, the compiled output files will be generated in the `bin` folder by default.
+- `https://github.com/Chikamiri`
 
-> If you want to customize the folder structure, open `.vscode/settings.json` and update the related settings there.
+2. Nguyen Duy Khanh - 2301 0335
 
-## Dependency Management
+- `https://github.com/NguyenDuyKhanh05`
 
-The `JAVA PROJECTS` view allows you to manage your dependencies. More details can be found [here](https://github.com/microsoft/vscode-java-dependency#manage-dependencies).
+## Progress:
+
+- Welcome Page - **Done**
+- Login Panel
+    + **Todo**: Login failed even after registered
+- Main Window
+- ...
