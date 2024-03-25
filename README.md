@@ -27,7 +27,7 @@ Giao diện cửa sổ JavaFX.
 ## Progress:
 
 - Welcome Page - **Done**
-- Login Panel
-    + **Todo**: Login failed even after registered
+- Login Panel - **Done**
 - Main Window
+    **Ongoing...**
 - ...
