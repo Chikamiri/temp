@@ -18,7 +18,7 @@ public class EasterEgg implements Initializable{
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1){
-        file=new File("D:\\KTPM\\temp\\src\\Background.mp4");
+        file=new File("D:\\KTPM\\temp\\src\\Media\\Background.mp4");
         media=new Media(file.toURI().toString());
         mediaPlayer=new MediaPlayer(media);
         mediaview.setMediaPlayer(mediaPlayer);

@@ -1,6 +1,5 @@
 import java.io.IOException;
 import java.security.NoSuchAlgorithmException;
-
 import Account.Account;
 import Account.Account.Auth;
 import javafx.application.Platform;
@@ -11,6 +10,7 @@ import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 import javafx.stage.StageStyle;
@@ -24,10 +24,12 @@ public class LoginPanel {
     private Label LoginStatus;
 
     @FXML
-    private TextField password;
+    private PasswordField password;
 
     @FXML
     private TextField username;
+
+    public static String user_out;
 
     @FXML
     void loginBtn(ActionEvent event) {
@@ -40,9 +42,13 @@ public class LoginPanel {
 
             } else {
                 System.out.println("Success");
+                user_out = user_get;
                 try {
                     FXMLLoader manager = new FXMLLoader(getClass().getResource("/FXML/MainManager.fxml"));
                     Parent toManager = manager.load();
+
+                    MainManager managerController = manager.getController();
+                    managerController.setUsername(user_out);
 
                     Stage openManager = new Stage();
                     openManager.setScene(new Scene(toManager));
@@ -74,7 +80,10 @@ public class LoginPanel {
     void RegBtn(ActionEvent event) {
         String user_get = username.getText();
         String pwd_get = password.getText();
-
+        if(pwd_get.length()<8) {
+            LoginStatus.setText("At be at least 8 characters long!");
+            return;
+        }
         try {
             boolean registered=Account.Auth.auth_register(user_get, pwd_get);
             if (registered) {
