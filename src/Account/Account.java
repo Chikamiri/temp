@@ -57,6 +57,7 @@ public class Account {
         private static Map<String, String> cache = new HashMap<>();
 
         public static void registerUser(String username, String password) throws NoSuchAlgorithmException {
+            cache.clear();
             byte[] salt = PwdUtil.generateSalt();
             String hashedPwd = PwdUtil.hashPassword(password, salt);
 

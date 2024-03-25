@@ -76,7 +76,7 @@ public class LoginPanel {
         String pwd_get = password.getText();
 
         try {
-            boolean registered=Account.Auth.authUser(user_get, pwd_get);
+            boolean registered=Account.Auth.auth_register(user_get, pwd_get);
             if (registered) {
                 System.out.println(registered);
                 Account.Auth.registerUser(user_get, pwd_get);
