@@ -47,6 +47,7 @@ public class LoginPanel {
                     FXMLLoader manager = new FXMLLoader(getClass().getResource("/FXML/MainManager.fxml"));
                     Parent toManager = manager.load();
 
+                    //It's called Contructor Inject. Why? idk :P
                     MainManager managerController = manager.getController();
                     managerController.setUsername(user_out);
 

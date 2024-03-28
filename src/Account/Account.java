@@ -37,7 +37,7 @@ public class Account {
         return salt;
     }
 
-    public class PwdUtil {
+    public class PwdUtil {      //Password Utility
         public static String hashPassword(String password, byte[] salt) throws NoSuchAlgorithmException {
             MessageDigest md = MessageDigest.getInstance("SHA-256");
             md.update(salt);
@@ -119,11 +119,13 @@ public class Account {
         }
     }
 
-    public static void main(String[] args) throws NoSuchAlgorithmException {
-        // Auth.registerUser("admin", "12345");
-        System.out.println(Auth.authUser("admin", "12313"));
-        System.out.println(Auth.authUser("admin", "12345"));
-
-    }
-
+    // test if it work or not lol
+    /*
+     * public static void main(String[] args) throws NoSuchAlgorithmException {
+     * // Auth.registerUser("admin", "12345");
+     * System.out.println(Auth.authUser("admin", "12313"));
+     * System.out.println(Auth.authUser("admin", "12345"));
+     * 
+     * }
+     */
 }
